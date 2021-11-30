@@ -1,11 +1,38 @@
 import './App.scss';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Header from './components/Header.js';
+import LoginForm from './components/LoginForm.js'
+import User from './services/User.js'
+import { useState } from 'react';
 
-function App() {
+const App = () => {
+  const [user, setUser] = useState(new User());
+  const [headerRender, setHeaderRender] = useState(1);
+  
+
+  const onLogin = (credentials) => {
+    user.login(credentials)
+      .then((result) => {
+        if(result){
+          console.log(`Witaj ${user.username}`);
+          setHeaderRender(headerRender*-1);
+         }
+         else console.log("Podano złe dane!");
+      })
+  }
   return (
-    <div className="App">
-      burrito
-      {/* <img src="https://media1.tenor.com/images/3a7824e8bbb622d1f72d263e07027771/tenor.gif?itemid=8974053"/> */}
-    </div>
+    <Router>
+      <div className="App">
+        {headerRender !== 0 && <Header user={user}/>}
+          <Routes>
+            <Route
+              path="/" 
+              element={<LoginForm onLogin={onLogin}/>}
+            />
+          </Routes>
+      </div>
+      
+    </Router>
   );
 }
 

@@ -1,0 +1,25 @@
+.form-field{
+    padding:15px;
+    border:0;
+    border-bottom:1px solid black;
+}
+
+.btn{
+    margin-left: 3.5rem;
+    background-color: white;
+    color: black;
+    border: solid black 1px;
+}
+
+.navbar{
+    margin-left:1rem;
+}
+
+.navbar p{
+    margin-left: 0.25rem;
+    font-weight: bold;
+}
+
+.form-field:focus{
+    outline: none;
+}
