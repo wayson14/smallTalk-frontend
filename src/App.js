@@ -7,18 +7,23 @@ import { useState } from 'react';
 
 const App = () => {
   const [user, setUser] = useState(new User());
+  const [headerRender, setHeaderRender] = useState(1);
+  
 
   const onLogin = (credentials) => {
     user.login(credentials)
       .then((result) => {
-        result ? console.log(`Witaj ${user.username}`) : console.log("Podano złe dane!")
+        if(result){
+          console.log(`Witaj ${user.username}`);
+          setHeaderRender(headerRender*-1);
+         }
+         else console.log("Podano złe dane!");
       })
-    return;
   }
   return (
     <Router>
       <div className="App">
-        <Header user={user}/>
+        {headerRender !== 0 && <Header user={user}/>}
           <Routes>
             <Route
               path="/" 

@@ -1,5 +1,5 @@
 function User () {
-    this.username = 'adsf';
+    this.username = 'not logged yet!';
     this.passwd = null;
     this.logged = null;
 
