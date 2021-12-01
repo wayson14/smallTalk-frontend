@@ -1,5 +1,5 @@
 function User () {
-    this.username = 'not logged yet!';
+    this.username = 'Not logged yet!';
     this.passwd = null;
     this.logged = null;
 

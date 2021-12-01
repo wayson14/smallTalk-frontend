@@ -1,14 +1,16 @@
 import React from 'react'
 import './LogIn.scss'
 
-const Button = ({ color, text, onClick}) => {
+
+
+const Button = ({ color, text, onClick, props}) => {
     return (
-        <button
-            className="btn"
-            onClick={onClick}
-        >
-            {text}
-        </button>
+            <button
+                className="btn"
+                onClick={onClick}
+            >
+                {text}
+            </button>
     )
 }
 Button.defaultProps = {

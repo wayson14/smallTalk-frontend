@@ -1,0 +1,41 @@
+.navbar-brand{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.navigation{
+    background-color: rgb(41,41,41);
+    padding: 20px 0 30px 10px;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    position: absolute;
+}
+
+.allLink{
+    margin-left: 60%;
+}
+
+.nav-item{
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+.nav-link{
+    font-weight: bold;
+    padding: 20px 10px 0 0px ;
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+    float: left;
+    width: 4rem;
+    height: 5.5rem;
+}

@@ -1,22 +1,23 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
-    background-color: ivory;
-    display: flex;
-    justify-content: center;
-    transform: translate(0,50%);
+    background-color: rgb(41,41,41);
 }
 
 .App {
-    background-color: lightgray;
-    padding: 5rem 5rem 5rem 6rem;
-    border: solid;
-    width: initial;
+    color: white;
+    background-color: rgb(41,41,41);
+    padding: 5rem 1rem 5rem 5rem;
+    border: solid 1px white;
+    width: 15vw;
+    transform: translate(200%,30%);
 }
 .navbar {
     display: inline-flex;
 }
 .container {
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 1em;
     border-radius: 3px;
 }
@@ -25,25 +26,4 @@ body {
   margin: 0.2em;
 }
 
-.btn {
-    display: inline-block;
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: inherit;
-  }
-
-  .btn:focus {
-    outline: none;
-  }
-  
-  .btn:active {
-    transform: scale(0.98);
-  }
   

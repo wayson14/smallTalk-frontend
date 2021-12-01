@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 import Button from './Button.js';
-import './LogIn.scss'
+import './LogIn.scss';
 
 const LoginForm = ({ onLogin }) => {
 

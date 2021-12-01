@@ -4,19 +4,35 @@
     border-bottom:1px solid black;
 }
 
-.btn{
+.btn {
     margin-left: 3.5rem;
-    background-color: white;
-    color: black;
-    border: solid black 1px;
-}
+    background-color: rgb(41,41,41);
+    color: white;
+    border: solid white 1px;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .btn:focus {
+    outline: none;
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+  }
 
 .navbar{
     margin-left:1rem;
 }
 
-.navbar p{
-    margin-left: 0.25rem;
+.navUser{
+    padding: 0;
+    margin-left: 6rem;
     font-weight: bold;
 }
 

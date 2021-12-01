@@ -21,18 +21,12 @@ const App = () => {
       })
   }
   return (
-    <Router>
       <div className="App">
         {headerRender !== 0 && <Header user={user}/>}
           <Routes>
-            <Route
-              path="/" 
-              element={<LoginForm onLogin={onLogin}/>}
-            />
+            <Route path="/"element={<LoginForm onLogin={onLogin}/>}/>
           </Routes>
       </div>
-      
-    </Router>
   );
 }
 
