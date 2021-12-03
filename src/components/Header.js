@@ -1,4 +1,4 @@
-import './LogIn.scss'
+import './Login.scss'
 import { React, useState } from 'react'
 
 const Header = (u) => {
@@ -10,10 +10,10 @@ const Header = (u) => {
 
     return (
         <>
-            <div className="navUser">
+            <div className="nav-user">
                 <p>{user.username}</p> 
             </div>
-            <div className="navbar">
+            <div className="login-navbar">
                 <h1>Chad-Chat</h1>
                 {/* <button onClick={updateUsername}>change username</button> */}
                 {/* /* //https://www.youtube.com/watch?v=5Xew--ycx0o&list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS&index=13  */} 

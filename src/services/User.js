@@ -41,7 +41,13 @@ function User () {
 
     } 
     this.logout = () => {
-        return
+        /*Sprytniejszym podejściem byłoby nadpisywanie całego obiektu nowym obiektem,
+         ale możliwe że kiedyś będziemy chcieli wprowadzić dodatkowe funkcjonalności związane
+         z procesem wylogowania - lepiej to robić wewnątrze tego obiektu 
+        */
+         this.username = 'Not logged yet!';
+        this.passwd = null;
+        this.logged = false;
     }
     this.fill =  ({ username, passwd }) => {
         const fillUser = new Promise ((resolve) => {

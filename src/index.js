@@ -7,19 +7,22 @@ import Chat from './dashboard/Chat';
 import Home from './dashboard/Home'
 import Contact from './dashboard/Contact'
 import About from './dashboard/About'
+import './index.scss'
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Navigation/>
-      <Routes>
-          <Route path="/login"element={<App />}/>
-          <Route path="/chat" element={<Chat />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-      </Routes>
+      <div className="main container">
+        <Routes>
+            <Route path="/login"element={<App />}/>
+            <Route path="/chat" element={<Chat />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

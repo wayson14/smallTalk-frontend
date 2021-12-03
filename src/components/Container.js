@@ -1,6 +1,6 @@
 import React from 'react'
 import LoginForm from './LoginForm'
-import './LogIn.sccs'
+import './Login.sccs'
 
 const Container = () => {
     return (
