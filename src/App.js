@@ -1,10 +1,9 @@
 import './App.scss';
-
+import Chat from './Chat.js';
 function App() {
   return (
     <div className="App">
-      burrito
-      {/* <img src="https://media1.tenor.com/images/3a7824e8bbb622d1f72d263e07027771/tenor.gif?itemid=8974053"/> */}
+      <Chat></Chat>
     </div>
   );
 }
