@@ -1,13 +1,28 @@
 import './App.scss';
 import Chat from './Chat.js';
-
+import Login from './Login.js';
 import { useState, useEffect} from 'react'
-import { AppBar, Typography, Toolbar, Button, CssBaseline} from '@mui/material'
-
+import { Container, AppBar, Typography, Toolbar, Button, CssBaseline} from '@mui/material'
+// import { makeStyles } from '@mui/styles'
 function App() {
 
+  // const useStyles = makeStyles({
+  //   root: {
+  //     margin: '20px',
+  //   }
+  // })
+  const [loginStatus, setLoginStatus] = useState(false);
   const [username, setUsername] = useState('');
 
+  const onLogin = (u) => {
+    setLoginStatus(true);
+    setUsername(u);
+    
+  }
+
+  useEffect(() => {
+    console.log(username);
+  }, [username])
   return (
     
     <div className="App" >
@@ -22,7 +37,9 @@ function App() {
           <Typography>{username}</Typography>
         </Toolbar>
       </AppBar> */}
-      <Chat></Chat>
+      <Container alignItems="center" component="main" maxWidth="xs">
+        {loginStatus ? <Chat u={username}></Chat> : <Login onLogin={onLogin}></Login>}
+      </Container>
     </div>
   );
 }
