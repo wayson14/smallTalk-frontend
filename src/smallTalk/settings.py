@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
 #my-apps
+    'frontend.apps.FrontendConfig',
 
 #django-req
     'django.contrib.admin',
