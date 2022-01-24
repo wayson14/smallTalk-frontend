@@ -18,8 +18,8 @@ Nasza aplikacja łączy ludzi, którzy podczas codziennego życia nigdy nie miel
     2. npm install
     3. npm run dev
 5. cd ..
- 1. python manage.py migrate
- 2. python manage.py runserver
+    6. python manage.py migrate
+    7. python manage.py runserver
 
 ## Ścieżki:
 / - App.js
