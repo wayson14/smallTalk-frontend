@@ -131,8 +131,7 @@ dmypy.json
 # Text backup files
 *.bak
 
-# Database
-*.sqlite3
+# Database NOT THIS TIME
 
 # Node
 frontend/node_modules/
