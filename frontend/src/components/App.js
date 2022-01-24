@@ -7,7 +7,7 @@ export default class App extends Component {
     }
     render() {
         return (
-            <p>kutas</p>
+            <p>kutas kozla</p>
         );
     }
 }
